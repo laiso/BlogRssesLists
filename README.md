@@ -6,6 +6,7 @@ http://ac7.tumblr.com/post/33569124174
 
 をがんばってエスパーしてリファクタリングするプロジェクト。
 
+
 # 要件
 
 - RssListsContorollerクラスのリライトを対象にする
@@ -13,6 +14,37 @@ http://ac7.tumblr.com/post/33569124174
 - SimpleTestを使い、CakeTestCaseでモデル層のテストを、CakeWebTestCaseでコントローラーのテストを書く
 - テンプレート部分は詳細が不明なのでアサインする変数名などは変更しないようにする
 - DBのスキーマはコードから予測できる範囲を定義しそれ以外を勝手に追加しない
+
+
+# 登場人物紹介
+
+## RssListsController
+
+[BlogRssesLists/controllers/rsslists_controller.php](https://github.com/laiso/BlogRssesLists/blob/master/controllers/rsslists_controller.php "BlogRssesLists/controllers/rsslists_controller.php")
+
+原作に登場する唯一の人物。
+モデルにRSSフィードを要求しクロールして何かを抽出する謎の存在
+
+## モデル層
+
+[BlogRssesLists/models](https://github.com/laiso/BlogRssesLists/tree/master/models "BlogRssesLists/models")
+
+Rss 「くくく……」
+RssList 「我々が揃ったからには……」
+BlogRssList 「決っして」
+RssFetcher 「生きては帰さぬ」
+
+
+## コントローラーテスト 
+
+[BlogRssesLists/tests/cases/controllers/RSSListsController.test.php](https://github.com/laiso/BlogRssesLists/blob/master/tests/cases/controllers/RSSListsController.test.php "BlogRssesLists/tests/cases/controllers/RSSListsController.test.php")
+
+
+## モデル層テスト (未登場)
+
+[BlogRssesLists/tests/cases](https://github.com/laiso/BlogRssesLists/tree/master/tests/cases "BlogRssesLists/tests/cases")
+
+以下へ登場予定
 
 
 # 環境構成
